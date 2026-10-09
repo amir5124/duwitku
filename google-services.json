@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "570941437502",
+    "project_id": "duwitku-4ef83",
+    "storage_bucket": "duwitku-4ef83.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570941437502:android:6f9a6a66b077d6689dc36f",
+        "android_client_info": {
+          "package_name": "com.duwitku.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAegM772OVHaTPc1BLOQUbtwMc-awRGZk4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

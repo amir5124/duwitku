@@ -1,0 +1,84 @@
+{
+  "expo": {
+    "name": "Duwitku",
+    "slug": "duwitku",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "duwitku",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#3b6ef5"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.duwitku.app",
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "infoPlist": {
+        "NSSpeechRecognitionUsageDescription": "Izinkan Duwitku untuk menggunakan speech recognition agar kamu bisa bertanya dengan suara.",
+        "NSMicrophoneUsageDescription": "Izinkan Duwitku untuk mengakses mikrofon untuk fitur voice input."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundImage": "./assets/adaptive-icon-background.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.duwitku.app",
+      "googleServicesFile": "./google-services.json",
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.INTERNET",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.VIBRATE",
+        "android.permission.POST_NOTIFICATIONS"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/icon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "Izinkan Duwitku untuk mengakses mikrofon agar kamu bisa bertanya dengan suara ke KalKu.",
+          "speechRecognitionPermission": "Izinkan Duwitku untuk menggunakan speech recognition agar kamu bisa bertanya dengan suara.",
+          "androidSpeechServicePackages": [
+            "com.google.android.googlequicksearchbox"
+          ]
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#3b6ef5",
+          "sounds": [
+            "./assets/sounds/notification.mp3"
+          ],
+          "androidMode": "default",
+          "androidCollapsedTitle": "Duwitku",
+          "iosDisplayInForeground": true
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "80589974-6888-4f7c-9302-5318b2fb55aa"
+      }
+    }
+  }
+}
